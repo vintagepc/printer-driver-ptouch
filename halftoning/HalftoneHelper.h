@@ -19,8 +19,10 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 
+#ifdef __cplusplus
 extern "C"
 {
+#endif
     extern int do_halftone_err_diff(unsigned char* buffer, int bufLen);
 
     extern void nll_clear_buffers();
@@ -28,4 +30,6 @@ extern "C"
     extern void nll_process();
     extern int nll_get_next_line(unsigned char* buffer, int bufLen);
 
+#ifdef __cplusplus
 }
+#endif

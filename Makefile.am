@@ -27,6 +27,7 @@ execfilterdir			= $(libdir)/cups/filter
 execfilter_PROGRAMS		= rastertoptch
 rastertoptch_CPPFLAGS		= -D_GNU_SOURCE
 rastertoptch_LDADD		= $(LIBM) $(LIBCUPS) $(LIBCUPSIMAGE)
+rastertoptch_SOURCES	= rastertoptch.c halftoning/Halftoning.cpp halftoning/ErrorDiffusionHalftoning.cpp halftoning/NonLinearLaplacianHalftoning.cpp
 
 noinst_PROGRAMS			= ptexplain
 ptexplain_LDADD			= $(LIBPNG)
